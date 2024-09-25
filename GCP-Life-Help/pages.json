@@ -1,0 +1,77 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "广城生活帮",
+                "enablePullDownRefresh": true
+                
+			}
+		},
+		{
+		    "path" : "pages/job/job",
+		    "style" : 
+		    {
+		        "navigationBarTitleText" : "广城生活帮",
+                "enablePullDownRefresh": true
+		    }
+		},
+		{
+		    "path" : "pages/shop/shop",
+		    "style" : 
+		    {
+		        "navigationBarTitleText" : "广城生活帮",
+                "enablePullDownRefresh": true
+		    }
+		},
+		{
+		    "path" : "pages/mine/mine",
+		    "style" : 
+		    {
+		        "navigationBarTitleText" : "广城生活帮"
+		    }
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "广城生活帮",
+		"navigationBarBackgroundColor": "#41a863",
+		"backgroundColor": "#41a863",
+        "titlePenetrate": "YES"
+	},
+    "tabBar": {
+        "color": "#000000",
+        	"selectedColor": "#fff",
+        	"borderStyle": "white",
+        	"backgroundColor": "#41a863",
+            "iconWidth": "50rpx",
+            "fontSize": "25rpx",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "iconPath": "static/home.png",
+                "selectedIconPath": "static/home__.png",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/job/job",
+                "iconPath": "static/job.png",
+                "selectedIconPath": "static/job_.png",
+                "text": "兼职跑腿"
+            },
+            {
+                "pagePath": "pages/shop/shop",
+                "iconPath": "static/shop.png",
+                "selectedIconPath": "static/shop__.png",
+                "text": "二手市场"
+            },
+            {
+                "pagePath": "pages/mine/mine",
+                "iconPath": "static/mine.png",
+                "selectedIconPath": "static/mine_.png",
+                "text": "我的"
+            }
+        ]
+    },
+	"uniIdRouter": {}
+}
