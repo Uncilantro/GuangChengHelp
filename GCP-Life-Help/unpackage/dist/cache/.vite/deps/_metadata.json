@@ -1,8 +1,29 @@
 {
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+  "hash": "5573553b",
+  "configHash": "53709b5d",
+  "lockfileHash": "a5f07d92",
+  "browserHash": "a9cf551e",
+  "optimized": {
+    "@escook/request-miniprogram": {
+      "src": "../../../../../node_modules/@escook/request-miniprogram/miniprogram_dist/index.js",
+      "file": "@escook_request-miniprogram.js",
+      "fileHash": "df9b60ca",
+      "needsInterop": false
+    }
+  },
+=======
+>>>>>>> Stashed changes
   "hash": "4ca586d5",
   "configHash": "bf641b8e",
   "lockfileHash": "e3b0c442",
   "browserHash": "0009a1ab",
   "optimized": {},
+<<<<<<< Updated upstream
+=======
+>>>>>>> 31bd41b3a091c76fa289d062195b5d30c71ab0e6
+>>>>>>> Stashed changes
   "chunks": {}
 }

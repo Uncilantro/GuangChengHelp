@@ -1,0 +1,115 @@
+
+/* 基础样式 */
+.container.data-v-610f95c2 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.navbar.data-v-610f95c2 {
+  display: flex;
+  height: 60rpx;
+  text-align: center;
+  line-height: 70rpx;
+  justify-content: space-around;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+.navbar button.data-v-610f95c2 {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.navbar .active.data-v-610f95c2 {
+  color: #528f8e;
+  font-weight: bold;
+}
+.content.data-v-610f95c2 {
+  flex: 1;
+  overflow-y: auto;
+}
+.outside_border.data-v-610f95c2 {
+  padding: 32rpx;
+  background-color: #fff;
+  border-radius: 16rpx;
+  margin-bottom: 32rpx;
+}
+.weui-panel.data-v-610f95c2 {
+  margin-top: 32rpx;
+}
+.weui-cell.data-v-610f95c2 {
+  display: flex;
+  align-items: center;
+  padding: 24rpx 32rpx;
+  border-bottom: 1rpx solid #ebedf0;
+}
+.weui-cell__hd.data-v-610f95c2 {
+}
+.weui-label.data-v-610f95c2 {
+    text-align: left;
+    width: 150rpx;
+    font-size: 32rpx;
+    color: #333;
+}
+.weui-cell__bd.data-v-610f95c2 {
+  width: 100%;
+}
+
+/* 输入框样式 */
+.weui-input.data-v-610f95c2 {
+  width: 100%;
+  height: 50rpx;
+  padding: 10rpx;
+  border: 1rpx solid #ddd;
+  border-radius: 8rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+.describe_thing.data-v-610f95c2,
+.describe.data-v-610f95c2 {
+  width: 100%;
+  margin-left: -10rpx;
+  min-height: 150rpx;
+  padding: 24rpx;
+  border: 1rpx solid #ddd;
+  border-radius: 8rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+
+/* picker 样式 */
+.picker-container.data-v-610f95c2 {
+  position: relative;
+  width: 100%;
+}
+.picker-container .weui-select.data-v-610f95c2 {
+  width: 100%;
+  height: 80rpx;
+  padding: 24rpx;
+  border: 1rpx solid #ddd;
+  border-radius: 8rpx;
+  font-size: 28rpx;
+  color: #333;
+  background-color: #fff;
+}
+
+/* picker 内容样式 */
+.weui-select_in-select-after.data-v-610f95c2 {
+  display: inline-block;
+  width: 95%;
+  height: 50rpx;
+  line-height: 40rpx;
+  padding: 24rpx;
+  border: 1rpx solid #ddd;
+  border-radius: 8rpx;
+  font-size: 28rpx;
+  color: #333;
+  background-color: #fff;
+  cursor: pointer;
+}
+.tip.data-v-610f95c2 {
+  font-size: 28rpx;
+  color: #666;
+  margin-bottom: 32rpx;
+}
