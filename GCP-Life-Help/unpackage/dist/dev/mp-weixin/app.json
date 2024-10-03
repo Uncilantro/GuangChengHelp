@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/job/job",
+    "pages/shop/shop",
+    "pages/mine/mine"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "广城生活帮",
+    "navigationBarBackgroundColor": "#41a863",
+    "backgroundColor": "#41a863",
+    "titlePenetrate": "YES"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#fff",
+    "borderStyle": "white",
+    "backgroundColor": "#41a863",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/home.png",
+        "selectedIconPath": "static/home__.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/job/job",
+        "iconPath": "static/job.png",
+        "selectedIconPath": "static/job_.png",
+        "text": "兼职跑腿"
+      },
+      {
+        "pagePath": "pages/shop/shop",
+        "iconPath": "static/shop.png",
+        "selectedIconPath": "static/shop__.png",
+        "text": "二手市场"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "static/mine.png",
+        "selectedIconPath": "static/mine_.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

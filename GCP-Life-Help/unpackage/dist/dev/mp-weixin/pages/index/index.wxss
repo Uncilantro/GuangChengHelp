@@ -1,0 +1,7 @@
+
+.swiper-item{
+        background-color: green;
+        width: 800rpx;
+        height: 400rpx;
+}
+
