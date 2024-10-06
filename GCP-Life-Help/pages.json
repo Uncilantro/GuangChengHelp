@@ -1,7 +1,4 @@
 {
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
     "pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
         {
             "path": "pages/index/index",
@@ -55,70 +52,12 @@
         "iconWidth": "50rpx",
         "fontSize": "25rpx",
         "list": [{
-=======
->>>>>>> Stashed changes
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "广城生活帮",
-                "enablePullDownRefresh": true
-                
-			}
-		},
-		{
-		    "path" : "pages/job/job",
-		    "style" : 
-		    {
-		        "navigationBarTitleText" : "广城生活帮",
-                "enablePullDownRefresh": true
-		    }
-		},
-		{
-		    "path" : "pages/shop/shop",
-		    "style" : 
-		    {
-		        "navigationBarTitleText" : "广城生活帮",
-                "enablePullDownRefresh": true
-		    }
-		},
-		{
-		    "path" : "pages/mine/mine",
-		    "style" : 
-		    {
-		        "navigationBarTitleText" : "广城生活帮"
-		    }
-		}
-	],
-	"globalStyle": {
-		"navigationBarTextStyle": "white",
-		"navigationBarTitleText": "广城生活帮",
-		"navigationBarBackgroundColor": "#41a863",
-		"backgroundColor": "#41a863",
-        "titlePenetrate": "YES"
-	},
-    "tabBar": {
-        "color": "#000000",
-        	"selectedColor": "#fff",
-        	"borderStyle": "white",
-        	"backgroundColor": "#41a863",
-            "iconWidth": "50rpx",
-            "fontSize": "25rpx",
-        "list": [
-            {
-<<<<<<< Updated upstream
-=======
->>>>>>> 31bd41b3a091c76fa289d062195b5d30c71ab0e6
->>>>>>> Stashed changes
                 "pagePath": "pages/index/index",
                 "iconPath": "static/home.png",
                 "selectedIconPath": "static/home__.png",
                 "text": "首页"
             },
             {
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
                 "pagePath": "pages/school/school",
                 "iconPath": "static/job.png",
                 "selectedIconPath": "static/job_.png",
@@ -127,7 +66,8 @@
             {
                 "pagePath": "pages/jia/jia",
                 "iconPath": "static/icon_添加.png",
-                "selectedIconPath": "static/加.png"
+                "selectedIconPath": "static/加.png",
+                "text": "我要发布"
             },
             {
                 "pagePath": "pages/fenlei/fenlei",
@@ -137,24 +77,6 @@
             },
 
             {
-=======
->>>>>>> Stashed changes
-                "pagePath": "pages/job/job",
-                "iconPath": "static/job.png",
-                "selectedIconPath": "static/job_.png",
-                "text": "兼职跑腿"
-            },
-            {
-                "pagePath": "pages/shop/shop",
-                "iconPath": "static/shop.png",
-                "selectedIconPath": "static/shop__.png",
-                "text": "二手市场"
-            },
-            {
-<<<<<<< Updated upstream
-=======
->>>>>>> 31bd41b3a091c76fa289d062195b5d30c71ab0e6
->>>>>>> Stashed changes
                 "pagePath": "pages/mine/mine",
                 "iconPath": "static/mine.png",
                 "selectedIconPath": "static/mine_.png",
@@ -162,15 +84,5 @@
             }
         ]
     },
-<<<<<<< Updated upstream
 	"uniIdRouter": {}
 }
-=======
-<<<<<<< HEAD
-    "uniIdRouter": {}
-}
-=======
-	"uniIdRouter": {}
-}
->>>>>>> 31bd41b3a091c76fa289d062195b5d30c71ab0e6
->>>>>>> Stashed changes

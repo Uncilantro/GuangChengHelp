@@ -1,6 +1,3 @@
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
 /**
  * 这里是uni-app内置的常用样式变量
  *
@@ -99,16 +96,3 @@
   color: #528f8e;
   font-weight: bolder;
 }
-=======
->>>>>>> Stashed changes
-
-.swiper-item{
-        background-color: green;
-        width: 800rpx;
-        height: 400rpx;
-}
-
-<<<<<<< Updated upstream
-=======
->>>>>>> 31bd41b3a091c76fa289d062195b5d30c71ab0e6
->>>>>>> Stashed changes

@@ -8,7 +8,7 @@
     "urlCheck": false,
     "es6": true,
     "postcss": false,
-    "minified": false,
+    "minified": true,
     "newFeature": true,
     "bigPackageSizeSupport": true,
     "babelSetting": {
@@ -18,15 +18,7 @@
     }
   },
   "compileType": "miniprogram",
-<<<<<<< Updated upstream
   "libVersion": "3.5.8",
-=======
-<<<<<<< HEAD
-  "libVersion": "3.6.0",
-=======
-  "libVersion": "3.5.8",
->>>>>>> 31bd41b3a091c76fa289d062195b5d30c71ab0e6
->>>>>>> Stashed changes
   "appid": "wxc7f155a01020bd49",
   "projectname": "GCP-Life-Help",
   "condition": {},

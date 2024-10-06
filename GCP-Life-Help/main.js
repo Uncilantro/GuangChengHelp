@@ -19,11 +19,4 @@ export function createApp() {
     app
   }
 }
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 31bd41b3a091c76fa289d062195b5d30c71ab0e6
->>>>>>> Stashed changes
 // #endif
