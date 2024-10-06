@@ -1,79 +1,88 @@
 <template>
   <view class="container">
-    <uni-collapse accordion @change="handleChange">
-      <uni-collapse-item v-for="(category, index) in categories" :key="index" :title="category.name" :name="category.id">
-        <view class="book-list" slot="content">
-          <view class="book-item" v-for="book in category.books" :key="book.id">
-            <text>{{ book.title }}</text>
-          </view>
-        </view>
-      </uni-collapse-item>
-    </uni-collapse>
+<template>
+  <view>
+    <view class="scroll-view-container">
+      <!-- 左侧的滚动视图区域 -->
+      <scroll-view class="left-scroll-view" scroll-y :style="{height: wh + 'px'}">
+        <view class="left-scroll-view-item active">智能建造</view>
+        <view class="left-scroll-view-item">信息工程学院</view>
+        <view class="left-scroll-view-item">电子商务</view>
+        <view class="left-scroll-view-item">xxx</view>
+        <view class="left-scroll-view-item">xxx</view>
+        <view class="left-scroll-view-item">xxx</view>
+        <view class="left-scroll-view-item">xxx</view>
+        <view class="left-scroll-view-item">xxx</view>
+        <view class="left-scroll-view-item">xxx</view>
+        <view class="left-scroll-view-item">xxx</view>
+        <view class="left-scroll-view-item">xxx</view>
+        <view class="left-scroll-view-item">xxx</view>
+        <view class="left-scroll-view-item">xxx</view>
+        <view class="left-scroll-view-item">xxx</view>
+      </scroll-view>
+      <!-- 右侧的滚动视图区域 -->
+      <scroll-view class="right-scroll-view" scroll-y >
+        <view class="left-scroll-view-item">zzz</view>
+        <view class="left-scroll-view-item">zzz</view>
+        <view class="left-scroll-view-item">zzz</view>
+        <view class="left-scroll-view-item">zzz</view>
+        <view class="left-scroll-view-item">zzz</view>
+        <view class="left-scroll-view-item">zzz</view>
+        <view class="left-scroll-view-item">zzz</view>
+        <view class="left-scroll-view-item">zzz</view>
+      </scroll-view>
+    </view>
+  </view>
+</template>
   </view>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      categories: [
-        {
-          name: '计算机科学',
-          id: 'cs',
-          books: [
-            { title: '算法导论', id: 'cs1' },
-            { title: '数据结构与算法分析', id: 'cs2' },
-            { title: '计算机网络', id: 'cs3' }
-          ]
-        },
-        {
-          name: '经济学',
-          id: 'economics',
-          books: [
-            { title: '经济学原理', id: 'eco1' },
-            { title: '微观经济学', id: 'eco2' },
-            { title: '宏观经济学', id: 'eco3' }
-          ]
-        },
-        {
-          name: '文学',
-          id: 'literature',
-          books: [
-            { title: '红楼梦', id: 'lit1' },
-            { title: '三国演义', id: 'lit2' },
-            { title: '西游记', id: 'lit3' }
-          ]
-        }
-      ],
-      activeNames: []
-    };
-  },
-  methods: {
-    handleChange(e) {
-      this.activeNames = e.detail;
-      console.log('当前激活的项:', e.detail);
+  export default {
+    data() {
+      return {
+        // 窗口的可用高度 = 屏幕高度 - navigationBar高度 - tabBar 高度
+        wh: 0
+      };
+    },
+    onLoad() {
+      // 获取当前系统的信息
+      const sysInfo = uni.getSystemInfoSync()
+      // 为 wh 窗口可用高度动态赋值
+      this.wh = sysInfo.windowHeight
     }
   }
-};
 </script>
 
-<style scoped>
-.container {
-  padding: 20px;
-}
+<style lang="scss">
+.scroll-view-container {
+  display: flex;
 
-.book-list {
-  padding: 10px;
-}
+  .left-scroll-view {
+    width: 120px;
 
-.book-item {
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
+    .left-scroll-view-item {
+      line-height: 60px;
+      background-color: #f7f7f7;
+      text-align: center;
+      font-size: 12px;
 
-.book-item:last-child {
-  margin-bottom: 0;
+      &.active {
+        background-color: #ffffff;
+        position: relative;
+        &::before {
+          content: ' ';
+          display: block;
+          width: 6rpx;
+          height: 100rpx;
+          background-color: #65a29f;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
 }
 </style>

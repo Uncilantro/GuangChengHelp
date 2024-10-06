@@ -1,27 +1,14 @@
 {
   "pages": [
     "pages/index/index",
-<<<<<<< Updated upstream
-    "pages/job/job",
-    "pages/shop/shop",
-=======
-<<<<<<< HEAD
     "pages/school/school",
     "pages/jia/jia",
     "pages/fenlei/fenlei",
-=======
-    "pages/job/job",
-    "pages/shop/shop",
->>>>>>> 31bd41b3a091c76fa289d062195b5d30c71ab0e6
->>>>>>> Stashed changes
     "pages/mine/mine"
   ],
   "window": {
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "广城生活帮",
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
     "navigationBarBackgroundColor": "#528f8e",
     "backgroundColor": "#cadf2a",
     "titlePenetrate": "YES"
@@ -31,21 +18,6 @@
     "selectedColor": "#fff",
     "borderStyle": "white",
     "backgroundColor": "#65a29f",
-=======
->>>>>>> Stashed changes
-    "navigationBarBackgroundColor": "#41a863",
-    "backgroundColor": "#41a863",
-    "titlePenetrate": "YES"
-  },
-  "tabBar": {
-    "color": "#000000",
-    "selectedColor": "#fff",
-    "borderStyle": "white",
-    "backgroundColor": "#41a863",
-<<<<<<< Updated upstream
-=======
->>>>>>> 31bd41b3a091c76fa289d062195b5d30c71ab0e6
->>>>>>> Stashed changes
     "list": [
       {
         "pagePath": "pages/index/index",
@@ -54,9 +26,6 @@
         "text": "首页"
       },
       {
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
         "pagePath": "pages/school/school",
         "iconPath": "static/job.png",
         "selectedIconPath": "static/job_.png",
@@ -65,29 +34,14 @@
       {
         "pagePath": "pages/jia/jia",
         "iconPath": "static/icon_添加.png",
-        "selectedIconPath": "static/加.png"
+        "selectedIconPath": "static/加.png",
+        "text": "我要发布"
       },
       {
         "pagePath": "pages/fenlei/fenlei",
         "iconPath": "static/分类---.png",
         "selectedIconPath": "static/分类——————.png",
         "text": "分类"
-=======
->>>>>>> Stashed changes
-        "pagePath": "pages/job/job",
-        "iconPath": "static/job.png",
-        "selectedIconPath": "static/job_.png",
-        "text": "兼职跑腿"
-      },
-      {
-        "pagePath": "pages/shop/shop",
-        "iconPath": "static/shop.png",
-        "selectedIconPath": "static/shop__.png",
-        "text": "二手市场"
-<<<<<<< Updated upstream
-=======
->>>>>>> 31bd41b3a091c76fa289d062195b5d30c71ab0e6
->>>>>>> Stashed changes
       },
       {
         "pagePath": "pages/mine/mine",

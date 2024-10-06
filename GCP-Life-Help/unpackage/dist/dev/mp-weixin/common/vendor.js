@@ -99,9 +99,6 @@ let _globalThis;
 const getGlobalThis = () => {
   return _globalThis || (_globalThis = typeof globalThis !== "undefined" ? globalThis : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : typeof global !== "undefined" ? global : {});
 };
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
 const toDisplayString = (val) => {
   return isString(val) ? val : val == null ? "" : isArray(val) || isObject(val) && (val.toString === objectToString || !isFunction(val.toString)) ? JSON.stringify(val, replacer, 2) : String(val);
 };
@@ -133,9 +130,6 @@ const stringifySymbol = (v, i = "") => {
   var _a;
   return isSymbol(v) ? `Symbol(${(_a = v.description) != null ? _a : i})` : v;
 };
-=======
->>>>>>> 31bd41b3a091c76fa289d062195b5d30c71ab0e6
->>>>>>> Stashed changes
 const SLOT_DEFAULT_NAME = "d";
 const ON_SHOW = "onShow";
 const ON_HIDE = "onHide";
@@ -321,18 +315,8 @@ const E = function() {
 };
 E.prototype = {
   on: function(name, callback, ctx) {
-<<<<<<< Updated upstream
-    var e = this.e || (this.e = {});
-    (e[name] || (e[name] = [])).push({
-=======
-<<<<<<< HEAD
     var e2 = this.e || (this.e = {});
     (e2[name] || (e2[name] = [])).push({
-=======
-    var e = this.e || (this.e = {});
-    (e[name] || (e[name] = [])).push({
->>>>>>> 31bd41b3a091c76fa289d062195b5d30c71ab0e6
->>>>>>> Stashed changes
       fn: callback,
       ctx
     });
@@ -358,18 +342,8 @@ E.prototype = {
     return this;
   },
   off: function(name, callback) {
-<<<<<<< Updated upstream
-    var e = this.e || (this.e = {});
-    var evts = e[name];
-=======
-<<<<<<< HEAD
     var e2 = this.e || (this.e = {});
     var evts = e2[name];
-=======
-    var e = this.e || (this.e = {});
-    var evts = e[name];
->>>>>>> 31bd41b3a091c76fa289d062195b5d30c71ab0e6
->>>>>>> Stashed changes
     var liveEvents = [];
     if (evts && callback) {
       for (var i = evts.length - 1; i >= 0; i--) {
@@ -380,15 +354,7 @@ E.prototype = {
       }
       liveEvents = evts;
     }
-<<<<<<< Updated upstream
-    liveEvents.length ? e[name] = liveEvents : delete e[name];
-=======
-<<<<<<< HEAD
     liveEvents.length ? e2[name] = liveEvents : delete e2[name];
-=======
-    liveEvents.length ? e[name] = liveEvents : delete e[name];
->>>>>>> 31bd41b3a091c76fa289d062195b5d30c71ab0e6
->>>>>>> Stashed changes
     return this;
   }
 };
@@ -505,21 +471,9 @@ function assertType$1(value, type) {
   let valid;
   const expectedType = getType$1(type);
   if (isSimpleType$1(expectedType)) {
-<<<<<<< Updated upstream
-    const t = typeof value;
-    valid = t === expectedType.toLowerCase();
-    if (!valid && t === "object") {
-=======
-<<<<<<< HEAD
     const t2 = typeof value;
     valid = t2 === expectedType.toLowerCase();
     if (!valid && t2 === "object") {
-=======
-    const t = typeof value;
-    valid = t === expectedType.toLowerCase();
-    if (!valid && t === "object") {
->>>>>>> 31bd41b3a091c76fa289d062195b5d30c71ab0e6
->>>>>>> Stashed changes
       valid = value instanceof type;
     }
   } else if (expectedType === "Object") {
@@ -575,18 +529,8 @@ function tryCatch(fn) {
   return function() {
     try {
       return fn.apply(fn, arguments);
-<<<<<<< Updated upstream
-    } catch (e) {
-      console.error(e);
-=======
-<<<<<<< HEAD
     } catch (e2) {
       console.error(e2);
-=======
-    } catch (e) {
-      console.error(e);
->>>>>>> 31bd41b3a091c76fa289d062195b5d30c71ab0e6
->>>>>>> Stashed changes
     }
   };
 }
@@ -768,18 +712,8 @@ function promisify$1(name, fn) {
     if (hasCallback(args)) {
       return wrapperReturnValue(name, invokeApi(name, fn, args, rest));
     }
-<<<<<<< Updated upstream
-    return wrapperReturnValue(name, handlePromise(new Promise((resolve, reject) => {
-      invokeApi(name, fn, extend(args, { success: resolve, fail: reject }), rest);
-=======
-<<<<<<< HEAD
     return wrapperReturnValue(name, handlePromise(new Promise((resolve2, reject) => {
       invokeApi(name, fn, extend(args, { success: resolve2, fail: reject }), rest);
-=======
-    return wrapperReturnValue(name, handlePromise(new Promise((resolve, reject) => {
-      invokeApi(name, fn, extend(args, { success: resolve, fail: reject }), rest);
->>>>>>> 31bd41b3a091c76fa289d062195b5d30c71ab0e6
->>>>>>> Stashed changes
     })));
   };
 }
@@ -1037,15 +971,7 @@ let enabled;
 function normalizePushMessage(message) {
   try {
     return JSON.parse(message);
-<<<<<<< Updated upstream
-  } catch (e) {
-=======
-<<<<<<< HEAD
   } catch (e2) {
-=======
-  } catch (e) {
->>>>>>> 31bd41b3a091c76fa289d062195b5d30c71ab0e6
->>>>>>> Stashed changes
   }
   return message;
 }
@@ -1085,15 +1011,7 @@ function invokeGetPushCidCallbacks(cid2, errMsg) {
   getPushCidCallbacks.length = 0;
 }
 const API_GET_PUSH_CLIENT_ID = "getPushClientId";
-<<<<<<< Updated upstream
-const getPushClientId = defineAsyncApi(API_GET_PUSH_CLIENT_ID, (_, { resolve, reject }) => {
-=======
-<<<<<<< HEAD
 const getPushClientId = defineAsyncApi(API_GET_PUSH_CLIENT_ID, (_, { resolve: resolve2, reject }) => {
-=======
-const getPushClientId = defineAsyncApi(API_GET_PUSH_CLIENT_ID, (_, { resolve, reject }) => {
->>>>>>> 31bd41b3a091c76fa289d062195b5d30c71ab0e6
->>>>>>> Stashed changes
   Promise.resolve().then(() => {
     if (typeof enabled === "undefined") {
       enabled = false;
@@ -1102,15 +1020,7 @@ const getPushClientId = defineAsyncApi(API_GET_PUSH_CLIENT_ID, (_, { resolve, re
     }
     getPushCidCallbacks.push((cid2, errMsg) => {
       if (cid2) {
-<<<<<<< Updated upstream
-        resolve({ cid: cid2 });
-=======
-<<<<<<< HEAD
         resolve2({ cid: cid2 });
-=======
-        resolve({ cid: cid2 });
->>>>>>> 31bd41b3a091c76fa289d062195b5d30c71ab0e6
->>>>>>> Stashed changes
       } else {
         reject(errMsg);
       }
@@ -1175,21 +1085,9 @@ function promisify(name, api) {
     if (isFunction(options.success) || isFunction(options.fail) || isFunction(options.complete)) {
       return wrapperReturnValue(name, invokeApi(name, api, options, rest));
     }
-<<<<<<< Updated upstream
-    return wrapperReturnValue(name, handlePromise(new Promise((resolve, reject) => {
-      invokeApi(name, api, extend({}, options, {
-        success: resolve,
-=======
-<<<<<<< HEAD
     return wrapperReturnValue(name, handlePromise(new Promise((resolve2, reject) => {
       invokeApi(name, api, extend({}, options, {
         success: resolve2,
-=======
-    return wrapperReturnValue(name, handlePromise(new Promise((resolve, reject) => {
-      invokeApi(name, api, extend({}, options, {
-        success: resolve,
->>>>>>> 31bd41b3a091c76fa289d062195b5d30c71ab0e6
->>>>>>> Stashed changes
         fail: reject
       }), rest);
     })));
@@ -3045,15 +2943,6 @@ function isReadonly(value) {
 function isShallow(value) {
   return !!(value && value["__v_isShallow"]);
 }
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-function isProxy(value) {
-  return isReactive(value) || isReadonly(value);
-}
-=======
->>>>>>> 31bd41b3a091c76fa289d062195b5d30c71ab0e6
->>>>>>> Stashed changes
 function toRaw(observed) {
   const raw = observed && observed["__v_raw"];
   return raw ? toRaw(raw) : observed;
@@ -3848,9 +3737,6 @@ function setCurrentRenderingInstance(instance) {
   instance && instance.type.__scopeId || null;
   return prev;
 }
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
 const COMPONENTS = "components";
 function resolveComponent(name, maybeSelfReference) {
   return resolveAsset(COMPONENTS, name, true, maybeSelfReference) || name;
@@ -3892,9 +3778,6 @@ If this is a native custom element, make sure to exclude it from component resol
 function resolve(registry, name) {
   return registry && (registry[name] || registry[camelize(name)] || registry[capitalize(camelize(name))]);
 }
-=======
->>>>>>> 31bd41b3a091c76fa289d062195b5d30c71ab0e6
->>>>>>> Stashed changes
 const INITIAL_WATCHER_VALUE = {};
 function watch(source, cb, options) {
   if (!isFunction(cb)) {
@@ -5502,18 +5385,6 @@ const Static = Symbol.for("v-stc");
 function isVNode(value) {
   return value ? value.__v_isVNode === true : false;
 }
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-const InternalObjectKey = `__vInternal`;
-function guardReactiveProps(props) {
-  if (!props)
-    return null;
-  return isProxy(props) || InternalObjectKey in props ? extend({}, props) : props;
-}
-=======
->>>>>>> 31bd41b3a091c76fa289d062195b5d30c71ab0e6
->>>>>>> Stashed changes
 const emptyAppContext = createAppContext();
 let uid = 0;
 function createComponentInstance(vnode, parent, suspense) {
@@ -6698,17 +6569,6 @@ function initApp(app) {
   }
 }
 const propsCaches = /* @__PURE__ */ Object.create(null);
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-function renderProps(props) {
-  const { uid: uid2, __counter } = getCurrentInstance();
-  const propsId = (propsCaches[uid2] || (propsCaches[uid2] = [])).push(guardReactiveProps(props)) - 1;
-  return uid2 + "," + propsId + "," + __counter;
-}
-=======
->>>>>>> 31bd41b3a091c76fa289d062195b5d30c71ab0e6
->>>>>>> Stashed changes
 function pruneComponentPropsCache(uid2) {
   delete propsCaches[uid2];
 }
@@ -6749,9 +6609,6 @@ function getCreateApp() {
     return my[method];
   }
 }
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
 function vOn(value, key) {
   const instance = getCurrentInstance();
   const ctx = instance.ctx;
@@ -6877,10 +6734,6 @@ const o = (value, key) => vOn(value, key);
 const f = (source, renderItem) => vFor(source, renderItem);
 const e = (target, ...sources) => extend(target, ...sources);
 const t = (val) => toDisplayString(val);
-const p = (props) => renderProps(props);
-=======
->>>>>>> 31bd41b3a091c76fa289d062195b5d30c71ab0e6
->>>>>>> Stashed changes
 function createApp$1(rootComponent, rootProps = null) {
   rootComponent && (rootComponent.mpType = "app");
   return createVueApp(rootComponent, rootProps).use(plugin);
@@ -7714,16 +7567,10 @@ const createSubpackageApp = initCreateSubpackageApp();
 }
 exports._export_sfc = _export_sfc;
 exports.createSSRApp = createSSRApp;
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
 exports.e = e;
 exports.f = f;
+exports.index = index;
 exports.o = o;
-exports.p = p;
 exports.ref = ref;
 exports.resolveComponent = resolveComponent;
 exports.t = t;
-=======
->>>>>>> 31bd41b3a091c76fa289d062195b5d30c71ab0e6
->>>>>>> Stashed changes
